@@ -29,24 +29,24 @@
       <nav class="navbar">
         <a href="index.html" class="logo link">WebStudio</a>
         <ul class="nav-list list">
-          <li>
+          <li class="nav-list-items">
             <a href="#" class="nav-items current-link link">Studio</a>
           </li>
-          <li>
+          <li class="nav-list-items">
             <a href="portfolio.html" class="nav-items link">Portfolio</a>
           </li>
-          <li>
+          <li class="nav-list-items">
             <a href="#" class="nav-items link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul class="right-navbar list">
-        <li>
+      <ul class="navbar-contacts list">
+        <li class="navbar-contacts-items">
           <a href="mailto:info@devstudio.com" class="contact-information link"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="navbar-contacts-items">
           <a href="tel:+380961111111" class="contact-information link"
             >+38 096 111 11 11</a
           >
@@ -66,33 +66,33 @@
         </button>
       </div>
     </section>
-    <section class="webstudio-selling-points">
+    <section class="section">
       <div class="container">
-        <ul class="list">
-          <li>
-            <h3>ATTENTION TO DETAILS</h3>
-            <p>
+        <ul class="list benefits">
+          <li class="benefits-item">
+            <h3 class="benefits-title">ATTENTION TO DETAILS</h3>
+            <p class="benefits-description">
               We go into all the details and processes of your business to
               develop a customized solution.
             </p>
           </li>
-          <li>
-            <h3>PUNCTUALITY</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-title">PUNCTUALITY</h3>
+            <p class="benefits-description">
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and respect the agreed deadlines.
             </p>
           </li>
-          <li>
-            <h3>PLANNING</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-title">PLANNING</h3>
+            <p class="benefits-description">
               You will be able to observe and participate in every phase of
               solution development and implementation.
             </p>
           </li>
-          <li>
-            <h3>MODERN TECHNOLOGIES</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-title">MODERN TECHNOLOGIES</h3>
+            <p class="benefits-description">
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
             </p>
@@ -100,9 +100,9 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section class="section section-no-top-padding">
       <div class="what-we-do container">
-        <h2>What we do</h2>
+        <h2 class="what-we-do-title">What we do</h2>
         <ul class="images-section list">
           <li>
             <img
@@ -131,16 +131,17 @@
         </ul>
       </div>
     </section>
-    <section class="our-team">
+    <section class="section section-team our-team">
       <div class="container">
         <h2 class="our-team-header">Our Team</h2>
-        <ul class="list">
+        <ul class="list our-team-cards">
           <li class="member-card">
             <img
               src="./images/imgguy-with-rdj-glasses.jpg"
               alt="Igor Demyanenko's personal picture who is the product desinger"
               width="270"
               height="260"
+              class="member-card-images"
             />
             <h3 class="member-name" lang="ru">Игорь Демьяненко</h3>
             <p class="member-role">Product Designer</p>
@@ -151,6 +152,7 @@
               alt="Olga Repina's picture who is the frontend developer"
               width="270"
               height="260"
+              class="member-card-images"
             />
             <h3 class="member-name" lang="ru">Ольга Репина</h3>
             <p class="member-role">Frontend Developer</p>
@@ -161,6 +163,7 @@
               alt="Nikolay Tarasov's picture who works in marketing"
               width="270"
               height="260"
+              class="member-card-images"
             />
             <h3 class="member-name" lang="ru">Николай Тарасов</h3>
             <p class="member-role">Marketing</p>
@@ -171,6 +174,7 @@
               alt="Михаил Ермаков's picture who is the UI Designer"
               width="270"
               height="260"
+              class="member-card-images"
             />
             <h3 class="member-name" lang="ru">Михаил Ермаков</h3>
             <p class="member-role">UI Designer</p>
@@ -180,8 +184,8 @@
     </section>
   </main>
   <footer class="footer-style">
-    <div class="address-column container">
-      <a href="index.html" class="logo link">WebStudio</a>
+    <div class="container">
+      <a href="index.html" class="logo link footer-logo">WebStudio</a>
       <address>
         <ul class="list">
           <li class="address-bar-items">

@@ -54,13 +54,13 @@ address {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
 }
 
 .header-line {
@@ -71,7 +71,6 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
 }
 
 a.current-link {
@@ -82,7 +81,11 @@ a.current-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  margin-left: 97px;
+}
+
+.nav-list-items {
+  margin-right: 60px;
 }
 
 .logo {
@@ -91,10 +94,12 @@ a.current-link {
   color: var(--blue);
 }
 
-.right-navbar {
-  width: 300px;
+.navbar-contacts {
   display: flex;
-  justify-content: space-around;
+}
+
+.navbar-contacts-items {
+  margin-right: 50px;
 }
 
 .nav-items {
@@ -102,6 +107,8 @@ a.current-link {
   font-size: 14px;
   font-weight: 500;
   transition-duration: 0.5s;
+  display: block;
+  padding: 32px 0 31px 0;
 }
 
 .contact-information {
@@ -109,6 +116,8 @@ a.current-link {
   font-size: 14px;
   font-weight: 500;
   transition-duration: 0.5s;
+  display: block;
+  padding: 32px 0 31px 0;
 }
 
 .nav-items:hover,
@@ -119,10 +128,6 @@ a.current-link {
 .main-section {
   padding: 200px 0;
   background-color: var(--dark-blue);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center; /** Centering The Button not sure if correct **/
 }
 
@@ -151,23 +156,28 @@ a.current-link {
   background-color: var(--button-hover-blue);
 }
 
-.webstudio-selling-points {
-  margin-bottom: 100px;
-  margin-top: 94px;
+.section {
+  padding: 94px 0;
+}
+
+.section-no-top-padding {
+  padding-top: 0px;
+}
+
+.section-team {
+  background-color: var(--off-white);
+}
+
+.benefits {
   display: flex;
-  justify-content: space-evenly;
 }
 
-.webstudio-selling-points div {
-  width: 1170px;
+.benefits-item {
+  margin-right: 30px;
+  flex-basis: calc((100%-120px) / 3);
 }
 
-.webstudio-selling-points ul {
-  display: flex;
-  flex-basis: calc((100%-90px) / 3);
-}
-
-.webstudio-selling-points h3 {
+.benefits-title {
   color: var(--black);
   font-size: 14px;
   font-weight: 700;
@@ -175,7 +185,7 @@ a.current-link {
   letter-spacing: 0.03em;
 }
 
-.webstudio-selling-points p {
+.benefits-description {
   color: var(--grey);
   font-size: 14px;
   font-weight: 400;
@@ -186,15 +196,14 @@ a.current-link {
 .what-we-do {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 94px;
 }
 
-.what-we-do h2 {
+.what-we-do-title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   color: var(--black);
+  margin-bottom: 50px;
 }
 
 .images-section {
@@ -206,30 +215,32 @@ a.current-link {
   margin-right: 30px;
 }
 
-image .our-team {
+.team-member-image {
   width: 100%;
   background-color: var(--off-white);
   padding-bottom: 94px;
 }
 
 .our-team-header {
-  padding-top: 94px;
-  padding-bottom: 50px;
   color: var(--black);
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
 
 .member-card {
-  width: 270px;
-  height: 368px;
-  margin: 30px;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  padding-bottom: 30px;
+  margin-right: 30px;
+}
+
+.member-card-images {
+  margin-bottom: 30px;
 }
 
 .member-name {
@@ -237,7 +248,7 @@ image .our-team {
   color: var(--black);
   font-size: 16px;
   line-height: 19px;
-  padding: 30px 60px 10px 60px;
+  margin-bottom: 30px;
 }
 
 .member-role {
@@ -247,7 +258,7 @@ image .our-team {
   line-height: 19px;
 }
 
-.our-team ul {
+.our-team-cards {
   display: flex;
   justify-content: center;
 }
@@ -257,8 +268,9 @@ image .our-team {
   padding: 60px 0;
 }
 
-.address-column {
-  margin-left: 150px;
+.footer-logo {
+  margin-bottom: 10px;
+  display: block;
 }
 
 .address-column ul {
@@ -278,20 +290,24 @@ image .our-team {
   transition-duration: 0.5s;
 }
 
-.selector-menu-buttons {
+.filter-menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
 }
-.selector-menu-buttons button {
+
+.filter-menu-items {
+  margin-right: 8px;
+}
+
+.filter-menu-buttons {
   cursor: pointer;
   padding: 6px 26px;
   color: var(--black);
   background-color: var(--off-white);
   border-radius: 4px;
   border-style: hidden;
-  margin: 0px 8px;
   transition: 200ms;
   font-weight: 500;
   font-size: 16px;
@@ -311,23 +327,20 @@ li > .filter-current {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-showcase {
-  margin-top: 94px;
-}
-
 .portfolio-showcase-pictures {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  gap: 30px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .portfolio-showcase-pictures li {
-  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
-.project-wrapper > h3 {
+.project-wrapper-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -335,7 +348,7 @@ li > .filter-current {
   color: var(--black);
 }
 
-.project-wrapper > p {
+.project-wrapper-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
