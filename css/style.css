@@ -136,7 +136,7 @@ a.current-link {
   font-size: 44px;
   letter-spacing: 0.06em;
   font-weight: 900;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .main-section button {
@@ -172,8 +172,11 @@ a.current-link {
   display: flex;
 }
 
-.benefits-item {
+li.benefits-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.benefits-item {
   flex-basis: calc((100%-120px) / 3);
 }
 
@@ -236,6 +239,9 @@ a.current-link {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   padding-bottom: 30px;
+}
+
+li.member-card:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -248,7 +254,7 @@ a.current-link {
   color: var(--black);
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .member-role {
@@ -320,7 +326,7 @@ li > .filter-current {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.selector-menu-buttons button:hover {
+.filter-menu-buttons:hover {
   color: var(--white);
   background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
